@@ -1,0 +1,43 @@
+#playlistContainer {
+    width: 80%;
+    height: 80%;
+    position: relative;
+    margin-left: 14%;
+    border: 1px solid black;
+    background-image: url(../assets/images/playlistbg2.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    margin-bottom: 2%;
+    opacity: 0.95;
+}
+#iframeContainer {
+    top: 7%;
+    left: 11.5%;
+    height: 45%;
+    width: 77%;
+}
+#tableContainer {
+    height: 40%;
+    width: 88%;
+    bottom: 7%;
+}
+td {
+    font-size: 1.4vw;
+    line-height: 100%;
+}
+th {
+    font-size: 1.6vw;
+}
+#ytIcon {
+    position: absolute;
+    width: 4%;
+    height: 4%;
+    right: 65%;
+    top: 1%;
+}
+#playlistHeader {
+    margin-top: 1%;
+}
+#addBtn {
+    top: 1%;
+}

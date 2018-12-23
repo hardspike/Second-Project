@@ -1,0 +1,476 @@
+@font-face {
+    font-family: bangers;
+    src: url(../assets/fonts/Bangers/Bangers-Regular.ttf);
+}
+@font-face {
+    font-family: blackhansans;
+    src: url(../assets/fonts/Black_Han_Sans/BlackHanSans-Regular.ttf);
+}
+@font-face {
+    font-family: sriracha;
+    src: url(../assets/fonts/Sriracha/Sriracha-Regular.ttf);
+}
+@font-face {
+    font-family: shooken;
+    src: url(../assets/fonts/shooken/ShookenDemo.ttf);
+}
+
+body, html {
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    padding-top: 1%;
+    margin: 0;
+    text-align: center;
+    font-family: blackhansans;
+    font-size: 1vw;
+    text-shadow: 1px 1px white,
+        -1px -1px white,
+        1px -1px white,
+        -1px 1px white;
+    background-image: url(../assets/images/bg2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: black;
+}
+h1 {
+    display: inline-block;
+    font-size: 3vw;
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+#ytLogo {
+    color: white;
+    text-shadow: 1px 1px black,
+        -1px -1px black,
+        1px -1px black,
+        -1px 1px black,
+        2px 2px 2px white,
+        -2px -2px 2px white,
+        2px -2px 2px white,
+        -2px 2px 2px white;
+}
+h2 {
+    margin-bottom: 3%;
+    font-size: 2vw;
+}
+h3 {
+    font-size: 1.5vw;
+}
+#ytLogo2 {
+    color: red;
+}
+#regComplete {
+    color: green;
+}
+#welcomeBox {
+    color: deepskyblue;
+    background-color: rgba(255, 255, 255, 0.2);
+    font-size: 1vw;
+    position: fixed;
+    left: 5%;
+    top: 5%;
+    border-radius: 10%;
+    box-shadow: 2px 2px 10px white,
+        -2px -2px 10px white,
+        -2px 2px 10px white,
+        2px -2px 10px white;
+    padding: 1%;
+}
+#helloUser {
+    color: deepskyblue;
+    text-shadow: 1px 1px black,
+        -1px -1px black,
+        1px -1px black,
+        -1px 1px black,
+        2px 2px 2px white,
+        -2px -2px 2px white,
+        2px -2px 2px white,
+        -2px 2px 2px white;
+    margin-bottom: 2%;
+}
+
+#registerContainer {
+    position: relative;
+    border: 5px solid black;
+    border-radius: 10px;
+    box-shadow: 4px 4px 20px red,
+        -4px -4px 20px red,
+        -4px 4px 20px red,
+        4px -4px 20px red;
+    width: 20%;
+    height: auto;
+    padding: 3%;
+    display: inline-block;
+    margin-bottom: 2%;
+}
+#registerContainer h2 {
+    color: white;
+    text-shadow: 1px 1px black,
+        -1px -1px black,
+        1px -1px black,
+        -1px 1px black,
+        2px 2px 2px white,
+        -2px -2px 2px white,
+        2px -2px 2px white,
+        -2px 2px 2px white;
+    position: absolute;
+    left: 15%;
+}
+#loginContainer {
+    border: 5px solid black;
+    border-radius: 10px;
+    box-shadow: 4px 4px 20px red,
+        -4px -4px 20px red,
+        -4px 4px 20px red,
+        4px -4px 20px red;
+    width: 20%;
+    height: auto;
+    padding: 5%;
+    display: inline-block;
+}
+#loginContainer h3 {
+    color: white;
+    text-shadow: 1px 1px black,
+        -1px -1px black,
+        1px -1px black,
+        -1px 1px black,
+        2px 2px 2px white,
+        -2px -2px 2px white,
+        2px -2px 2px white,
+        -2px 2px 2px white;
+}
+label {
+    font-size: 1vw;
+}
+#registerContainer input, #loginContainer input {
+    width: 100%;
+    font-size: 1vw;
+}
+#playlistContainer {
+    width: 80%;
+    height: 80%;
+    position: relative;
+    margin-left: 14%;
+    border: 1px solid black;
+    background-image: url(../assets/images/playlistbg.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    margin-bottom: 2%;
+    opacity: 0.95;
+}
+#iframeContainer {
+    position: absolute;
+    bottom: 12.5%;
+    left: 6%;
+    height: 75%;
+    width: 42%;
+    box-shadow: 1px 1px 3px white,
+        -1px -1px 3px white,
+        -1px 1px 3px white,
+        1px -1px 3px white;
+}
+#tableContainer {
+    position:absolute;
+    bottom: 12.5%;
+    right: 0.2%;
+    height: 75%;
+    width: 51%;
+    font-family: cursive;
+    background-color: rgba(0, 0, 0, 0.5);
+    overflow: scroll;
+}
+#tableContainer::-webkit-scrollbar {
+    display: none;
+}
+#playlistTable {
+    width: 100%;
+    position: absolute;
+    color: white;
+    font-family: sriracha;
+    line-height: 130%;
+    text-shadow: 1px 1px 1px black,
+        -1px -1px 1px black,
+        1px -1px 1px black,
+        -1px 1px 1px black;
+    font-size: 0.8vw;
+
+}
+
+#playlistHeader {
+    margin-top: 1.5%;
+    font-family: bangers;
+    font-size: 2vw;
+    text-shadow: 1px 1px 1px white,
+        -1px 1px 1px white,
+        1px -1px 1px white,
+        -1px -1px 1px white,
+        -3px -3px 4px black,
+        -3px 3px 4px black,
+        3px -3px 4px black,
+        3px 3px 4px black;
+    text-transform: uppercase;
+    letter-spacing: 0.5vw;
+
+}
+#ytIcon {
+    position: absolute;
+    width: 4%;
+    height: 6%;
+    right: 65%;
+    top: 3%;
+}
+
+th {
+    text-shadow: 2px 2px 2px dodgerblue,
+        -2px -2px 2px deepskyblue,
+        2px -2px 2px dodgerblue,
+        -2px 2px 2px deepskyblue;
+    color: black;
+    font-size: 1.2vw;
+}
+tr:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+tr:nth-of-type(1):hover {
+    background-color: transparent;
+}
+td {
+    border-top: 1px solid white;    
+    height: 5px;
+}
+#buttons {
+    display: block;
+    width: 95px;
+    height: 30px;
+    margin-top: 15%;
+    margin-left: 2px;
+    padding: 0;
+    border-top: none;   
+}
+#playBtn {
+    filter: drop-shadow(1px 1px 1px palegreen) 
+        drop-shadow(-1px -1px 1px palegreen)
+        drop-shadow(1px -1px 1px palegreen)
+        drop-shadow(-1px 1px 1px palegreen);
+}
+#editBtn {
+    filter: drop-shadow(1px 1px 1px lightskyblue) 
+        drop-shadow(-1px -1px 1px lightskyblue)
+        drop-shadow(1px -1px 1px lightskyblue)
+        drop-shadow(-1px 1px 1px lightskyblue);
+}
+#deleteBtn {
+    filter: drop-shadow(1px 1px 1px tomato) 
+        drop-shadow(-1px -1px 1px tomato)
+        drop-shadow(1px -1px 1px tomato)
+        drop-shadow(-1px 1px 1px tomato);
+}
+#playBtn:hover {
+    filter: 0;
+    filter: drop-shadow(2px 2px 2px greenyellow) 
+        drop-shadow(-2px -2px 2px greenyellow)
+        drop-shadow(2px -2px 2px greenyellow)
+        drop-shadow(-2px 2px 2px greenyellow);
+    cursor: pointer;
+}
+#editBtn:hover {
+    filter: 0;
+    filter: drop-shadow(2px 2px 2px deepskyblue) 
+        drop-shadow(-2px -2px 2px deepskyblue)
+        drop-shadow(2px -2px 2px deepskyblue)
+        drop-shadow(-2px 2px 2px deepskyblue);
+    cursor: pointer;
+}
+#deleteBtn:hover {
+    filter: none;
+    filter: drop-shadow(2px 2px 2px red) 
+        drop-shadow(-2px -2px 2px red)
+        drop-shadow(2px -2px 2px red)
+        drop-shadow(-2px 2px 2px red);
+    cursor: pointer;
+}
+
+#addModal {
+    display: none;
+    opacity: 0;
+    position: fixed;
+    z-index: 99;
+    padding-top: 5%;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+}
+
+#addModal-content {
+    margin: auto;
+    margin-top: 8%;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%;
+    overflow: auto;
+    box-shadow: 4px 4px 20px royalblue,
+        -4px -4px 20px #0062cc,
+        -4px 4px 20px royalblue,
+        4px -4px 20px #0062cc;
+    border-radius: 2%;
+    background-color: rgba(0, 0, 0, 0.9);
+    font-family: sriracha;
+}
+#addModalHeader {
+    font-size: 2.5vw;
+    color: black;
+    text-shadow: 2px 2px 2px royalblue,
+        -2px -2px 2px #0062cc,
+        2px -2px 2px royalblue,
+        -2px 2px 2px #0062cc;
+}
+
+#editModal {
+    display: none;
+    opacity: 0;
+    position: fixed;
+    z-index: 99;
+    padding-top: 5%;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+}
+
+#editModal-content {
+    margin: auto;
+    margin-top: 7%;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%;
+    overflow: auto;
+    box-shadow: 4px 4px 20px dodgerblue,
+        -4px -4px 20px deepskyblue,
+        -4px 4px 20px dodgerblue,
+        4px -4px 20px deepskyblue;
+    border-radius: 2%;
+    background-color: rgba(0, 0, 0, 0.9);
+    font-family: sriracha;
+}
+#editModalHeader {
+    font-size: 2.5vw;
+    color: black;
+    text-shadow: 2px 2px 2px dodgerblue,
+        -2px -2px 2px deepskyblue,
+        2px -2px 2px dodgerblue,
+        -2px 2px 2px deepskyblue;
+}
+#deleteModal {
+    display: none;
+    opacity: 0;
+    position: fixed;
+    z-index: 99;
+    padding-top: 5%;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+}
+
+#deleteModal-content {
+    margin: auto;
+    margin-top: 13%;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%;
+    overflow: auto;
+    box-shadow: 4px 4px 20px red,
+        -4px -4px 20px tomato,
+        -4px 4px 20px red,
+        4px -4px 20px tomato;
+    border-radius: 2%;
+    background-color: rgba(0, 0, 0, 0.9);
+    font-family: sriracha;
+}
+#deleteModalHeader {
+    font-size: 2.5vw;
+    color: black;
+    text-shadow: 2px 2px 2px red,
+        -2px -2px 2px tomato,
+        2px -2px 2px red,
+        -2px 2px 2px tomato;
+}
+@keyframes fade {
+    0% {opacity: 0}
+    100% {opacity: 1}
+}
+#editModal input {
+    width: 50%;
+    margin-bottom: 3%;
+    margin-left: 1%;
+    text-align: center;
+}
+#videoIDBox {
+    width: 5.5% !important;
+}
+#categoryBox {
+    width: 15% !important;
+}
+#addBtn {
+    position: absolute;
+    right: 18%;
+    top: 2%;
+    padding-bottom: 0;
+    font-size: 1.3vw;
+}
+#addBtn:hover {
+    text-shadow: 1px 1px 1px black,
+        -1px -1px 1px black,
+        1px -1px 1px black,
+        -1px 1px 1px black;
+}
+#addVideo {
+    background-color: #0062cc;
+}
+#addModal input {
+    width: 50%;
+    margin-bottom: 2%;
+}
+.qMark {
+    position: absolute;
+    height: 30px;
+    width: 30px;
+}
+#linkGuidance1, #linkGuidance2 {
+    display: none;
+    position: absolute;
+    width: 400px;
+    height: 100px;
+}
+#searchInput {
+    background-color: rgba(0, 0, 0, 0.3);
+    color: white;
+}
+button {
+    font-size: 1vw !important;
+}
+footer {
+    font-family: shooken;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color:rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    color: white;
+    text-shadow: 1px 1px 1px black,
+        -1px -1px 1px black;
+    font-size: 16px;
+    animation: footerFade 2s;
+}
+footer > span {
+    font-family: fantasy;
+}
